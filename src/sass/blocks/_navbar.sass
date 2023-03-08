@@ -1,0 +1,68 @@
+.navbar
+  margin-top: 50px
+  &-container
+    width: 90%
+    max-width: 1200px
+    margin: 0 auto
+  &-box
+    display: flex
+    justify-content: space-between
+    &__logo--mobile
+      position: absolute
+      right: 20px
+      top: 35px
+      width: 150px
+      height: 37px
+      z-index: 100
+    &__item
+      display: none
+    &__tel
+      display: flex
+      align-items: center
+      & a
+        font-size: 24px
+        font-weight: 500
+        +fmc
+        color: $text-color
+    &__menu
+      display: flex
+      align-items: center
+      width: 50%
+      &--mobile
+        display: none
+  &-menu
+    &__list
+      width: 100%
+      list-style-type: none
+      padding: 0
+      display: flex
+      justify-content: space-between
+      &--mobile
+        display: flex
+        flex-direction: column
+        padding: 0
+        padding-top: 100px
+        padding-left: 30px
+    &__point
+      display: inline
+      +fbc
+      text-transform: uppercase
+      color: $text-color
+      & a
+        color: $text-color
+        font-size: 15px
+        font-weight: 400
+        line-height: 17px
+        letter-spacing: 2px
+      &--mobile
+        display: inline
+        +fbc
+        text-transform: uppercase
+        color: $text-color
+        margin-top: 28px
+        & a
+          color: $text-color
+          font-size: 15px
+          font-weight: 400
+          line-height: 17px
+          letter-spacing: 2px

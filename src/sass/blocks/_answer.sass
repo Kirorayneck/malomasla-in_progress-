@@ -1,0 +1,69 @@
+.answer
+  &-box
+    display: flex
+    flex-direction: column
+    &__title
+      +fmc
+      font-weight: 500
+      font-size: 48px
+  &-accordeon
+    margin-top: 50px
+    &__button
+      position: relative
+      z-index: 1
+    &__icon
+      position: relative
+      display: block
+      width: 25px
+      height: 3px
+      &::before
+        position: absolute
+        content: ''
+        width: 25px
+        height: 3px
+        background-color: #000
+        transform: rotate(90deg)
+        transition: 0.3s;
+      &::after
+        position: absolute
+        content: ''
+        width: 25px
+        height: 3px
+        background-color: #000
+      &--active
+        &::before
+          transform: rotate(0deg)
+          transition: 0.3s;
+
+    &__upper
+      display: flex
+      z-index: 10
+      cursor: pointer
+      justify-content: space-between
+      align-items: center
+      padding-bottom: 20px
+      padding-right: 60px
+      border-bottom: 1px solid #D8D7D7
+      transition: 0.3s;
+      &--active
+        background-color: #FBF8E4
+        border-bottom: none
+        border-left: 8px solid #9BCB28
+        padding: 36px 60px
+        transition: 0.3s
+    &__question
+      +fbc
+      font-weight: 400
+      font-size: 20px
+    &__text
+      +fbc
+      font-weight: 400
+      font-size: 17px
+    &__down
+      height: 1px
+      overflow: hidden
+      transition: 0.3s
+      &--active
+        height: 80px
+        transition: 0.3s 
+      

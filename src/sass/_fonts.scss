@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'FuturaBookC';
+  src: url('../fonts/futurabookc/FuturaBookC.eot');
+  src: url('../fonts/futurabookc/FuturaBookC.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/futurabookc/FuturaBookC.woff') format('woff'),
+    url('../fonts/futurabookc/FuturaBookC.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FuturaMediumC';
+  src: url('../fonts/futuramediumc/FuturaMediumC.eot');
+  src: url('../fonts/futuramediumc/FuturaMediumC.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/futuramediumc/FuturaMediumC.woff') format('woff'),
+    url('../fonts/futuramediumc/FuturaMediumC.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FuturaLightC';
+  src: url('../fonts/futuralightc/FuturaLightC.eot');
+  src: url('../fonts/futuralightc/FuturaLightC.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/futuralightc/FuturaLightC.woff') format('woff'),
+    url('../fonts/futuralightc/FuturaLightC.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@mixin fbc {
+  font-family: 'FuturaBookC',
+  sans-serif;
+}
+@mixin fmc {
+  font-family: 'FuturaMediumC',
+    sans-serif;
+}
+@mixin flc {
+  font-family: 'FuturaLightC',
+    sans-serif;
+}
+@mixin shadow {
+    text-shadow: 1px 1px 0 darken($text-color, 50%),
+    1px -1px 0 darken($text-color, 50%),
+    -1px 1px 0 darken($text-color, 50%),
+    -1px -1px 0 darken($text-color, 50%),
+}

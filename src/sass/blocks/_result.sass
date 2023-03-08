@@ -1,0 +1,30 @@
+.result
+  &-box
+    display: flex
+    justify-content: space-between
+  &-text
+    &__title
+      width: 410px
+      +fmc
+      font-size: 48px
+      font-weight: 500
+      line-height: 54px
+    &__subtitle
+      display: block
+      width: 540px
+      margin-top: 32px
+      +fbc
+      font-size: 20px
+      line-height: 28px
+  &-points
+    padding-right: 60px
+  &-list
+    list-style-type: none
+    &__point
+      +fbc
+      font-size: 32px
+      margin-bottom: 32px
+      &:before
+        content:  "—";
+        position: relative;
+        left:     -5px;

@@ -1,0 +1,45 @@
+.feedback
+  background-image: url(../img/feedback/feedback-bg.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+  &-form
+    display: flex
+    flex-direction: column
+    padding-bottom: 115px
+    &__title
+      display: block
+      width: 750px
+      +fmc
+      font-size: 48px
+      font-weight: 400
+      margin-top: 116px
+    &__input
+      margin-top: 80px
+      padding-left: 20px
+      width: 280px
+      height: 60px
+      color: #6A6A6A
+      background-color: #f5f4f2
+      border: 1px solid #6A6A6A
+      +fbc
+      font-size: 16px
+      font-weight: 400
+      &:placeholder
+        +fbc
+        font-size: 16px
+        font-weight: 400
+    &__button
+      margin-left: 20px
+      border: none
+      +fbc
+      text-transform: uppercase
+      font-size: 15px
+      font-weight: 400
+      background-color: #9BCB28
+      cursor: pointer
+      padding: 23px 64px
+      letter-spacing: 2px
+      &:hover
+        background-color: #8dba23
+
+  

@@ -1,0 +1,71 @@
+.weekmenu
+  margin-top: 150px
+  &-title
+    display: block
+    +fmc
+    font-weight: 500
+    font-size: 48px
+  &-box
+    display: flex
+    padding: 0
+    justify-content: space-between
+    list-style-type: none
+    margin-top: 50px
+  &-day
+    width: 194px
+    +fbc
+    font-weight: 400
+    font-size: 15px
+    border: 1px solid #D8D7D7
+    border-left: none
+    border-right: none
+    text-align: center
+    padding: 19px 0
+    cursor: pointer
+    &__fixone
+      border-left: 1px solid #D8D7D7
+    &__fixtwo
+      border-right: 1px solid #D8D7D7
+    &__active
+      background-color: #9BCB28
+    &:hover
+      background-color: #9BCB28
+  &-menubox
+    display: none
+    &__active
+      display: flex
+      height: 840px
+      flex-wrap: wrap
+      flex-direction: column
+    &__dish
+      display: flex
+      width: 50%
+      margin-top: 50px
+      &--fix
+        margin-top: 30px
+  &-dish
+    &__time
+      min-width: 112px
+      max-width: 112px
+      text-align: right
+      margin-right: 20px
+      +flc
+      font-size: 17px
+      font-weight: 300
+    &__image
+      max-width: 150px
+      max-height: 150px
+      min-width: 150px
+      min-height: 150px
+      margin-right: 50px
+    &__title
+      +fbc
+      font-weight: 400
+      font-size: 20px
+    &__calories
+      display: block
+      +fbc
+      font-weight: 400
+      font-size: 17px
+      color: #B7B7B7
+      margin-top: 8px

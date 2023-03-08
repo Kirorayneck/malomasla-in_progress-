@@ -1,0 +1,435 @@
+@media (max-width: 1200px)
+  .section
+    margin-top: 100px
+  .container
+    width: 90%
+  .navbar
+    margin-top: 50px
+    &-container
+      width: 90%
+      max-width: 991px
+      margin: 0 auto
+    &-box
+      &__tel
+        & a
+          font-size: 18px
+    &-menu
+      &__point
+        & a
+          font-size: 13px
+
+  .hero
+    height: 650px
+    background-size: 80% auto;
+
+  .result
+    &-text
+      &__subtitle
+        width: 480px
+    &-list
+      padding: 0
+    &-points
+      padding-right: 0
+
+  .menu
+    &-left
+      &__point
+        padding-left: 20%
+  
+@media (max-width: 991px)
+  .section
+    margin-top: 50px
+  a, button
+    cursor: default
+    &:hover
+      background-color: transparent !important
+      
+  .container
+    width: 90%
+  .navbar
+    margin-top: 50px
+    &-box
+      align-items: center
+      &__logo
+        width: 120px
+        height: 40px
+      &__menu
+        width: 55%
+    &-container
+      width: 90%
+      max-width: 768px
+      margin: 0 auto
+    &-box
+      &__tel
+        & a
+          font-size: 16px
+    &-menu
+      &__point
+        & a
+          font-size: 11px
+
+  .hero
+    background: url(../img/hero/hero-bg.png) top right no-repeat
+    margin-top: 10px
+    height: 500px
+    background-size: 80% auto;
+    &-title
+      padding-top: 40px
+    &-subtitle
+      margin-top: 13px
+    &-button
+      margin-top: 30px
+      &:hover
+        
+  .result
+    &-text
+      &__title
+        width: 350px
+        font-size: 36px
+      &__subtitle
+        width: 350px
+        font-size: 20px
+        margin-top: 10px
+    &-list
+      &__point
+        font-size: 22px
+
+  .causes
+    &-box
+      &__title
+        font-size: 36px
+      &__list
+        width: 70%
+        margin: 0 auto
+        justify-content: space-between
+      &__img
+        display: none
+    &-list
+      &__card
+        flex-basis: 40%
+    &-card
+      &__img
+        max-width: 80px
+        max-height: 80px
+      &__text
+        +fmc
+        font-size: 15px
+
+  .menu
+    &-order
+      width: 90%
+      font-size: 12px
+    &-title
+      font-size: 36px
+    &-box
+      flex-direction: column
+      width: 80%
+      margin: 0 auto
+    &-left
+      &__title
+        display: inline-block
+        font-size: 20px
+      &__subtitle
+        display: inline-block
+        font-size: 18px
+        margin-left: 10px
+      &__point
+        text-align: center
+        padding: 20px 0
+    &-right
+      &__subtitle
+        font-size: 22px
+      &__point
+        &-active
+          padding: 20px 61px
+    &-diet
+      &__title
+        font-size: 20px
+        margin-top: 10px
+      &__list
+        margin-top: 0
+        margin-bottom: 0
+    &-duration
+      &__box
+        padding: 10px 0
+      &__title
+        font-size: 20px
+        margin-bottom: 5px
+  .duration
+    font-size: 16px
+  .price
+    font-size: 20px
+  .discount
+    font-size: 12px
+
+
+@media (max-width: 768px)
+  .container
+    max-width: 572px
+    width: 95%
+  .section
+    margin-top: 60px
+  .navbar
+    &-element
+      width: 30px
+      height: 14px
+      background-color: transperent
+      border-radius: 50%
+      position: relative
+      z-index: 10
+    &__menubutton
+      position: absolute
+      top: 7px
+      left: 0
+      width: 30px
+      height: 1px
+      background-color: $text-color
+      &:before
+        position: absolute
+        content: ''
+        width: 30px
+        height: 1px
+        background-color: $text-color
+        transform: translateY(-10px)
+        transition: 0.3s
+      &:after
+        content: ''
+        position: absolute
+        width: 30px
+        height: 1px
+        background-color: $text-color
+        transform: translateY(10px)
+        transition: 0.3s
+    &-box
+      align-items: center
+      &__item
+        display: flex
+      &__logo
+        display: none
+      &__menu
+        display: none
+        &--mobile--active
+          display: flex
+          position: absolute
+          left: 0
+          top: 0
+          background-color: #FBF8E4
+          width: 80%
+          padding-bottom: 40px
+          z-index: 10
+
+    &-container
+      width: 90%
+      max-width: 768px
+      margin: 0 auto
+    &-box
+      &__tel
+        & a
+          font-size: 16px
+    &-menu
+      &__point
+        & a
+          font-size: 11px
+  .navbar-element__active
+    z-index: 10
+    background-color: transperent
+    .navbar__menubutton
+      height: 0
+  .navbar-element__active span::before
+    transform: rotate(40deg)
+    background-color: #0F0F0F
+    z-index: 10
+  .navbar-element__active span::after
+    transform: rotate(-40deg)
+    background-color: #0F0F0F
+    z-index: 10
+
+  .hero
+    height: 550px
+    background: url(../img/hero/hero-bg-mobile.png) top right no-repeat
+    &-title
+      font-size: 50px
+      line-height: 56px
+      width: 500px
+
+  .result
+    &-box
+      flex-direction: column
+    &-text
+      &__title
+        width: 560px
+        font-size: 54px
+      &__subtitle
+        width: 100%
+        font-size: 20px
+        margin-top: 32px
+    &-list
+      padding: 0
+      margin-top: 65px
+      &__point
+        font-size: 32px
+
+  .causes
+    &-box
+      &__title
+        font-size: 54px
+      &__img
+        display: none
+      &__list
+        width: 90%
+    &-list
+      &__card
+        flex-basis: 50%
+        text-align: center
+        margin-top: 50px
+    &-card
+      &__img
+        max-width: 100px
+        max-height: 100px
+        margin: 0 auto
+      &__text
+        +fmc
+        font-size: 18px
+
+  .menu
+    &-order
+      width: 90%
+      font-size: 12px
+    &-title
+      font-size: 54px
+    &-box
+      flex-direction: column
+      width: 80%
+      margin: 0 auto
+    &-left
+      &__title
+        display: inline-block
+        font-size: 20px
+      &__subtitle
+        display: inline-block
+        font-size: 18px
+        margin-left: 10px
+      &__point
+        text-align: center
+        padding: 20px 0
+    &-right
+      &__subtitle
+        font-size: 22px
+      &__point
+        &-active
+          padding: 20px 61px
+    &-diet
+      &__title
+        font-size: 20px
+        margin-top: 10px
+      &__list
+        margin-top: 0
+        margin-bottom: 0
+    &-duration
+      &__box
+        padding: 10px 0
+      &__title
+        font-size: 20px
+        margin-bottom: 5px
+  .duration
+    font-size: 16px
+  .price
+    font-size: 20px
+  .discount
+    font-size: 12px
+@media (max-width: 572px)
+  .container
+    width: 87%
+    max-width: 310px
+  .section
+    margin-top: 40px
+  .hero
+    height: 586px
+    background: url(../img/hero/hero-bg-mobile.png) top right no-repeat
+    &-title
+      font-size: 36px
+      line-height: 40px
+      width: 280px
+      padding-top: 50px
+    &-subtitle
+      font-size: 18px
+      margin-top: 41px
+    &-button
+      width: 280px
+      margin-top: 57px
+
+  .result
+    &-text
+      &__title
+        width: 280px
+        font-size: 36px
+        line-height: 40px
+      &__subtitle
+        width: 280px
+        font-size: 20px
+        margin-top: 10px
+        line-height: 28px
+    &-list
+      margin-top: 40px
+      &__point
+        font-size: 22px
+        margin-bottom: 30px
+  .causes
+    &-box
+      &__title
+        font-size: 36px
+      &__list
+        width: 100%
+    &-list
+      &__card
+        flex-basis: 50%
+        text-align: center
+        margin-top: 25px
+    &-card
+      &__img
+        max-width: 70px
+        max-height: 70px
+        margin: 0 auto
+      &__text
+        +fmc
+        font-size: 14px
+
+  .menu
+    &-box
+      width: 90%
+      height: auto
+    &-title
+      font-size: 36px
+    &-left
+      &__title
+        
+        font-size: 14px
+      &__subtitle
+        
+        font-size: 14px
+        margin-left: 5px
+      &__point
+        padding: 10px 0
+    &-right
+      &__subtitle
+        font-size: 18px
+      &__point
+        &-active
+          padding: 20px
+    &-list
+      &__point
+        margin-top: 5px
+    &-duration
+      &__title
+        margin-top: 20px
+    &-diet
+      &__title
+        margin-top: 20px
+      &__list
+        padding-top: 0
+        height: auto
+  .discount
+    margin-right: 10px
+  .price
+    font-size: 18px
+
